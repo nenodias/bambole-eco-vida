@@ -1,20 +1,18 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="@/assets/logo.png">
+    <Spotlight />
   </div>
 </template>
 
 <script>
-
+import Spotlight from './Spotlight';
 export default {
   name: 'HomePage',
   components: {
+    Spotlight
   }
 }
 </script>
 
 <style>
-#app {
-  margin-top: 60px;
-}
 </style>
