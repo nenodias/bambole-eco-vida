@@ -1,5 +1,5 @@
 <template>
-    <b-field grouped group-multiline>
+    <b-field class="media-bar" grouped group-multiline>
         <div :class="getClass">
             <b-taglist attached>
                 <a target="_BLANK" :href="constants.FACEBOOK" class="tag is-info"><i class="fa fa-facebook"></i></a>
@@ -36,5 +36,8 @@ export default {
     top:8px;
     right:60px;
     z-index:999;
+}
+.media-bar.field.is-grouped{
+    justify-content: flex-end;
 }
 </style>

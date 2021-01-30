@@ -19,15 +19,20 @@
                     </b-navbar-item>
                 </b-navbar-dropdown>
                 <b-navbar-item href="#">
-                    Minha conta
-                </b-navbar-item>
+                    Contato
+                </b-navbar-item> 
+                <b-navbar-item href="#">
+                    Sobre
+                </b-navbar-item> 
+                <!-- 
                 <b-navbar-item v-if="isMobile" tag="router-link" :to="{ path: '/pesquisar' }">
                     Pesquisar
                 </b-navbar-item>
+                -->
             </template>
 
             <template slot="end" v-if="!isMobile">
-                <b-navbar-item tag="div">
+                <!-- <b-navbar-item tag="div">
                     <b-input placeholder="Pesquisar..."
                         type="search"
                         icon-pack="fa"
@@ -36,6 +41,7 @@
                         @icon-click="searchIconClick">
                     </b-input>
                 </b-navbar-item>
+                -->
             </template>
         </b-navbar>
         <media-bar></media-bar>

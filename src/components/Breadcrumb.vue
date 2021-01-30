@@ -1,6 +1,6 @@
 <template>
     <nav :class="getClass()" aria-label="breadcrumbs">
-        <nav class="breadcrumb is-centered" aria-label="breadcrumbs" v-if="crumbs">
+        <nav class="breadcrumb is-left" aria-label="breadcrumbs" v-if="crumbs">
             <ul>
                 <li v-for="(item, idx) in crumbs" :key="idx" :class="getItemClass(item)">
                     <router-link :to="item.link">
@@ -62,5 +62,8 @@ export default {
 <style>
     .breadcrumb.is-mobile{
         margin-top: 20px;
+    }
+    .breadcrumb {
+        margin-left: 20px;
     }
 </style>
