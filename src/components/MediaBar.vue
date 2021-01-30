@@ -37,7 +37,11 @@ export default {
     right:60px;
     z-index:999;
 }
-.media-bar.field.is-grouped{
-    justify-content: flex-end;
+.media{
+    top:8px;
+}
+.media-bar .field.is-grouped{
+    justify-content: flex-end !important;
+    -webkit-box-pack: end !important;
 }
 </style>

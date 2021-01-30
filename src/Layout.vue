@@ -1,9 +1,9 @@
 <template>
   <div :class="getClass()">
     <app-bar></app-bar>
-    <breadcrumb></breadcrumb>
+    <!-- <breadcrumb></breadcrumb> -->
     <div class="level">
-        <div class="level-item">
+        <div class="level-item width-100">
           <router-view></router-view>
         </div>
       
@@ -15,7 +15,6 @@
 <script>
 
 import AppBar from '@/components/AppBar.vue'
-import Breadcrumb from '@/components/Breadcrumb.vue'
 import AppFooter from '@/components/Footer.vue'
 
 import LayoutMixin from '@/mixins/LayoutMixin'
@@ -25,7 +24,6 @@ export default {
   mixins:[LayoutMixin],
   components: {
     AppBar,
-    Breadcrumb,
     AppFooter
   },
   methods:{

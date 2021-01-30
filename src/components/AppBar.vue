@@ -1,10 +1,9 @@
 <template>
     <div>
+        <media-bar></media-bar>
         <b-navbar>
             <template slot="brand">
-                <b-navbar-item tag="router-link" :to="{ path: '/' }">
-                    {{ constants.TITLE }}
-                </b-navbar-item>
+                <img :src="logo" class="bar-logo" />
             </template>
             <template slot="start">
                 <b-navbar-item href="#">
@@ -44,11 +43,12 @@
                 -->
             </template>
         </b-navbar>
-        <media-bar></media-bar>
+        <hr />
     </div>
 </template>
 
 <script>
+import logo from "../assets/bar_logo.png";
 import LayoutMixin from '@/mixins/LayoutMixin'
 import MediaBar from './MediaBar'
 import constants from './../constants'
@@ -61,7 +61,8 @@ export default {
     mixins:[LayoutMixin],
     data(){
         return {
-            constants
+            constants,
+            logo
         }
     },
     methods:{
@@ -75,5 +76,8 @@ export default {
 <style>
 .search {
     margin: 10px;
+}
+.bar-logo{
+    margin-right: 20px;
 }
 </style>

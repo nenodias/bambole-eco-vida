@@ -6,6 +6,7 @@ import VueAxios from 'vue-axios'
 import Buefy from 'buefy'
 
 import 'buefy/dist/buefy.css'
+import './assets/css/style.css'
 import 'font-awesome/css/font-awesome.min.css'
 
 Vue.use(VueRouter)
